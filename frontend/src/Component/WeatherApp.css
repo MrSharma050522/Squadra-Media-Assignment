@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.weather-app {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info,
+.filters,
+.historical-weather {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filters {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.historical-day {
+    margin-bottom: 1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 600px) {
+    .weather-app {
+        padding: 2rem;
+    }
+
+    .filters {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    .filters label {
+        flex: 1;
+    }
+
+    .historical-weather {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .historical-day {
+        flex: 1 1 45%;
+        border: none;
+        padding: 1rem;
+        margin: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
